@@ -29,6 +29,13 @@ yas[:,1:4] = imputer.transform(yas[:, 1:4]) #sadece sayisal degerler icin bu yon
 
 print(yas)
 
+'''
+"mean": Eksik değerleri sütunun ortalaması ile doldurur.
+"median": Eksik değerleri sütunun medyanı ile doldurur.
+"most_frequent": Eksik değerleri sütunun en sık kullanılan değeri ile doldurur (mod).
+"constant": Eksik değerleri belirli bir sabit değer ile doldurur. Bu durumda, fill_value parametresi kullanılır ve sabit değeri belirtmeniz gerekir.
+'''
+
 # ------------------ kategorik[nominal] veri donusumu ------ encoder ----------------------------------------------#
 
 ulke = veriler.iloc[:,0:1].values
